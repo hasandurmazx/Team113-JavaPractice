@@ -1,17 +1,18 @@
-package Day02_dataTurleri_Scanner;
+package day02_dataTurleri_Scanner;
 
 import java.util.Scanner;
 
-public class C05_ScannerilkGorev {
+public class C05_ScannerIlkGorev {
 
     public static void main(String[] args) {
         // kullanicidan bir sayi alin
         // ve sayinin karesini yazdirin
 
         Scanner scan= new Scanner(System.in);
+        System.out.println("Lutfen bir sayi girin");
 
-        double sayi= scan.nextDouble();
+        double girilenSayi= scan.nextDouble();
 
-        System.out.println("Sayinin karesi : " + sayi*sayi);
+        System.out.println("Girilen sayinin karesi : " + girilenSayi*girilenSayi);
     }
 }

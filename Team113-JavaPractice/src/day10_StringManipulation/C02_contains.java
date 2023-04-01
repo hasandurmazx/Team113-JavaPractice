@@ -1,12 +1,12 @@
-package day10_StringManipulation;
+package day10_stringManipulation;
 
 public class C02_contains {
+
     public static void main(String[] args) {
 
+        String str= "Java ogren, isi kap";
 
-        String str = "Java ogren, isi kap";
-
-        System.out.println(str.contains("Java"));  // true
+        System.out.println(str.contains("Java")); // true
 
         String s="ka";
 
@@ -20,7 +20,6 @@ public class C02_contains {
 
         System.out.println(str.contains("java")); // false
 
+
     }
-
-
 }

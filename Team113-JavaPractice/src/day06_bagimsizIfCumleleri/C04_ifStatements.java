@@ -2,23 +2,23 @@ package day06_bagimsizIfCumleleri;
 
 import java.util.Scanner;
 
-public class C04_ifStatements {
+public class C04_IfStatements {
 
     public static void main(String[] args) {
 
-        /*
-        Kullanicidan notunu alin
-        50 veya daha buyukse "Sinifi gectin"
-        50'den kucukse "Malesef kaldin"
-         */
+        // Soru 5- Kullanicidan notunu alin
+        //         50 veya daha buyukse ”Sinifi Gectin”,
+        //         50’den kucukse “Maalesef kaldin” yazdirin.
 
         /*
-        If statements'te sart parantezinden sonra suslu parantez kullanmazsak
-        Java ilk ;'e kadar olan kismi if body olarak kabul eder
+            if statements'da sart parantezinden sonra {} kullanmazsak
+            Java ilk ; ' e kadar olan kismi if body olarak kabul eder
 
             if body zaten bir satir ise bu bir sorun olmaz
-            ama if body bir satirdan coksa ilk satirdan sonrasi her durumda calisir
+            ama if body 1 satirdan coksa, ilk satirdan sonrasi
+            her durumda calisir
          */
+
 
         Scanner scan = new Scanner(System.in);
 
@@ -26,22 +26,16 @@ public class C04_ifStatements {
 
         double not = scan.nextDouble();
 
-        if (not>=50 && not<=100) {
+        if(not >= 50 && not<=100) System.out.println("Sinifi gectin");
 
-            System.out.println("Sinifi gectin");
-
-            System.out.println("kontrol1");
-            System.out.println("kontrol2");
-            System.out.println("kontrol3");
-        }
+            System.out.println("Kontrol1");
+            System.out.println("Kontrol2");
+            System.out.println("Kontrol3");
 
 
 
-        if (not<50)
-            System.out.println("Maalesef kaldin");
-            }
-        }
+        if (not<50) System.out.println("Maalesef kaldin");
 
 
-
-
+    }
+}

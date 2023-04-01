@@ -1,49 +1,44 @@
-package Day03_scanner_DataCasting;
+package day03_scanner_dataCasting;
 
 public class C05_DataCasting {
-
     public static void main(String[] args) {
 
-       /*
-              Bazi primitive data turleri baska hic bir data turunden deger kabul etmez
-             Bazi primitive data turleri ozel sartlar ile baska turdeki datalari deger olarak kabul eder
-
-        */
+        /*
+            Bazi primitive data turleri baska hic bir data turunden deger kabul etmez
+            Bazi primitive data turleri ozel sartlar ile baska turdeki datalari deger olarak kabul eder
+         */
 
         boolean bl= false;
 
         bl= true;
 
-       // bl="true"; String
+        // bl="true";
+        // bl=20;
+        // bl='a';
 
-       // bl=20; int
-       // bl='m' char
+        char ch= 't';
+        ch='%';
+        ch=' ';
+        ch=99;
 
-        char chr= 'm';
+        int sayi1= 20;
 
-        chr='#';
-        chr=' ';
-        chr=99;
+        short sayi2= 15;
 
-        int sayi1=20;
+        double sayi3=24;
 
-        short sayi2=15;
+        sayi1=sayi2; // int <=== short
+        //sayi1=sayi3;    int <=== double
 
-        double sayi3=72;
-
-        sayi1=sayi2; // <=== short
-        //sayi1=sayi3; int <=== double
-
-        //sayi2=sayi1; short <== int
+        //sayi2=sayi1; short <=== int
         //sayi2=sayi3; short <=== double
 
         sayi3=sayi1; // double <=== int
         sayi3=sayi2; // double <=== short
 
-        sayi1=chr;
-       //sayi2=chr;
-        sayi3=chr;
-
+        sayi1=ch;
+        //sayi2=ch;
+        sayi3=ch;
 
     }
 }

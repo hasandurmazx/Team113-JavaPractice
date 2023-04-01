@@ -1,30 +1,31 @@
-package Day08_NestedIfElse_Ternary;
+package day08_nestedIfElse_ternary;
 
 import java.util.Scanner;
 
 public class C05_Ternary {
 
     public static void main(String[] args) {
-
-        // Kullanicidan bir tam sayi alip
+        // kullanicidan bir tamsayi alip
         // mutlak degerine cevirip yazdirin
 
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Lutfen bir tam sayi giriniz");
-        int sayi = scan.nextInt();
+        System.out.println("Lutfen bir tamsayi giriniz");
+        int sayi= scan.nextInt();
 
-        if (sayi >= 0) {
-
+        /*
+        if (sayi>= 0){
             System.out.println(sayi);
-        } else {
-            sayi = sayi * (-1);
+        } else{
+            sayi= sayi * (-1);
             System.out.println(sayi);
-
         }
 
-        sayi = sayi >= 0 ? sayi : sayi * (-1);
+         */
+
+
+        sayi = sayi>=0 ? sayi : sayi*(-1);
+
         System.out.println(sayi);
     }
 }
-

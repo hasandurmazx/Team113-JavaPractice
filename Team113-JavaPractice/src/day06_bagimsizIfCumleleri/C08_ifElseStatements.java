@@ -2,24 +2,25 @@ package day06_bagimsizIfCumleleri;
 
 import java.util.Scanner;
 
-public class C08_ifElseStatements {
+public class C08_IfElseStatements {
 
     public static void main(String[] args) {
-        // Kullanicidan bir harf isteyin,
-        // girilen karakter kucuk harf ise onu buyuk harf olarak yazdirin,
-        // yoksa girilen harfi yazdirin
+
+        // Soru 5- Kullanicidan bir karakter isteyin,
+        //         girilen karakter kucuk harf ise onu buyuk harf olarak yazdirin,
+        //         yoksa girilen karakteri yazdirin
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("lutfen bir karakter giriniz");
+        System.out.println("Lutfen bir karakter giriniz");
 
         char krk = scan.next().charAt(0);
 
-        if ('a' <= krk && krk <= 'z') {
+        if ('a'<= krk && krk<='z'){
+
             System.out.println(Character.toUpperCase(krk));
-        } else {
+        }else {
             System.out.println(krk);
         }
-
     }
 }

@@ -1,33 +1,31 @@
-package Day02_dataTurleri_Scanner;
+package day02_dataTurleri_Scanner;
 
 public class C02_DataTurleri {
 
     public static void main(String[] args) {
 
-        char ilk_Harf= ' '; // tek tirnak icerisinde tek karakter (harf, sayi, ozel karakter, bosluk ...)
+        char ilkHarf= '8'; // Tek tirnak icinde tek karakter(harf,sayi,ozel karakter...)
 
-        byte Ogryasi=21; // en dogru kullanim bu olur, hafiza kullanimini optimize etmek icin bu yeterlidir
-        short ogryasi=21;
-        int ogrYasi= 21;
-        long OgrYasi=21;
 
-        double sayi1=3.123456789123456789;
-        System.out.println(sayi1); // 3.123456789123457
+        byte ogrYasi1=15; // en dogru kullanim bu olur, hafiza kullanimini optimize etmek icin bu yeterlidir
+        short ogryasi2=16;
+        int ogrYasi3=14;
+        long ogrYasi4=15;
 
-        // double virgulden sonra 16 hane yazdirir, ama cok kucuk  sayilara indigi icin
+        double sayi1=3.1234567890123453789;
+        System.out.println(sayi1); // 3.1234567890123457
+
+        // Double virgulden sonra 16 hane yazdirir, ama cok kucuk sayilara indigi icin
         // ondalikli kismin sonunda hatalar olabilir
-        // 15 /3 = 4.999999999999 or 5.0 or 5.000000000001
+        // 15 / 3 = 4.999999999999999  5.0  5.00000000000001
 
-        float sayi2= 45.12345676756747465799568f;
-        // float sayi tanimladigimizda doubleden farkli oldugunu belirtmek icin sonuna F veya f yazmak zorundayiz
+        float sayi2 = 45.543334578465354648f;
+        // float sayi tanimladigimizda double'dan farkli oldugunu belirtmek icin
+        // sonuna f veya F yazmak zorundayiz
+        System.out.println(sayi2); // 45.543335
 
-        System.out.println(sayi2);  // 45.123455
 
-        // biz dersler boyunca hafiza onemli olmadigi icin
+        // Biz dersler boyunca hafiza onemli olmadigi icin
         // tamsayilar icin int, ondalikli sayilar icin de double kullaniriz
-
-
-
-
     }
 }
